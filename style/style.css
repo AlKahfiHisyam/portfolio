@@ -1,0 +1,240 @@
+body {
+  font-family: Montserrat;
+  margin: 0;
+}
+
+header {
+  padding: 180px 0 140px;
+  /*background-image: url('/my-portfolio-main/assets/headerHero.jpg');*/
+  background-size: cover;
+  background-position: center;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+header p {
+  font-family: "Source Sans Pro";
+  font-size: 1.5rem;
+}
+
+header img {
+  width: 300px;
+  border: 3px solid #666;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.figure-img {
+  position: relative;
+  margin-bottom: 0px;
+  overflow: hidden;
+  height: 100%;
+  margin-top: 0;
+  border-radius: 0.9375rem;
+  overflow: hidden;
+}
+
+.figure-img .img-fluid {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.25s -webkit-transform ease-in-out;
+  transition: 0.25s -webkit-transform ease-in-out;
+  transition: 0.25s transform ease-in-out;
+  transition: 0.25s transform ease-in-out, 0.25s -webkit-transform ease-in-out;
+}
+
+.figure-img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.travel-button {
+  position: absolute;
+  bottom: 20px;
+  right: 150px;
+}
+
+.col-portfolio {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.card {
+  height: 300px;
+  border-radius: 15px;
+  border: 0;
+}
+
+.card.bordered {
+  border: 1px solid #e9ecef;
+}
+
+.card .img-wrapper {
+  overflow: hidden;
+  height: 100%;
+  border-radius: 0.9375rem;
+}
+
+.card .img-wrapper img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card.card-portfolio {
+  overflow: hidden;
+}
+
+.card.card-portfolio:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.card.card-portfolio .img-wrapper {
+  z-index: 1;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.25s -webkit-transform ease-in-out;
+  transition: 0.25s -webkit-transform ease-in-out;
+  transition: 0.25s transform ease-in-out;
+  transition: 0.25s transform ease-in-out, 0.25s -webkit-transform ease-in-out;
+}
+
+.card.card-portfolio .meta-wrapper {
+  z-index: 3;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.card.card-portfolio:hover .img-wrapper {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: #495057 !important;
+  -webkit-transition: background-color 800ms linear;
+  transition: background-color 800ms linear;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: -3px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-family: "Source Sans Pro";
+}
+
+.contact-item {
+  background: #fff;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  background: none;
+  border: 2px solid #fff;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contact-item i {
+  color: #fbd214;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contact-item:hover {
+  background: #fbd214;
+  color: #fff;
+}
+
+.contact-item:hover i,
+.contact-item:hover .contact-item-title,
+.contact-item:hover p {
+  color: #fff;
+}
+
+.contact-item:hover::before {
+  -webkit-transform: none;
+  transform: none;
+  opacity: 1;
+}
+
+.contact h4 {
+  font-size: medium;
+}
+
+.contact p {
+  font-size: small;
+}
+
+.social-link {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  color: #aaa;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 0.8rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: #fbd214;
+  color: #fff;
+  text-decoration: none;
+  border-color: #fbd214;
+}
+/*# sourceMappingURL=style.css.map */
